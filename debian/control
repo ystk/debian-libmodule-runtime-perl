@@ -1,0 +1,30 @@
+Source: libmodule-runtime-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ivan Kohler <ivan-debian@420.am>,
+           Alessandro Ghedini <ghedo@debian.org>,
+           Angel Abad <angel@debian.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: libparams-classify-perl,
+                     libtest-pod-coverage-perl,
+                     libtest-pod-perl,
+                     perl
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libmodule-runtime-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libmodule-runtime-perl.git
+Homepage: https://metacpan.org/release/Module-Runtime/
+
+Package: libmodule-runtime-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libparams-classify-perl,
+         perl
+Description: Perl module for runtime module handling
+ Module::Runtime deals with runtime handling of Perl modules, which are normally
+ handled at compile time.
+ .
+ This module provide functions that can, for example, require or use modules at
+ runtime, check for module names validity, compose module names and more.
+
